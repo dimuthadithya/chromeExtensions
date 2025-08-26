@@ -8,5 +8,6 @@
     },
     "permissions": [
         "storage"
-    ]
+    ],
+    "options_page": "options.html"
 }
