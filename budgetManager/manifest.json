@@ -5,5 +5,8 @@
     "description": "A simple budget management extension",
     "action": {
         "default_popup": "budget.html"
-    }
+    },
+    "permissions": [
+        "storage"
+    ]
 }
