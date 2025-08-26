@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "PageFont Style extension",
+    "version": "1.0",
+    "description": "An extension to change font styles on web pages",
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_title": "PageFontStyle"
+    }
+}
