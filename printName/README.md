@@ -21,10 +21,8 @@ To modify or enhance the extension:
 
 1. Make your changes to the source files
 2. Reload the extension in Chrome to see your changes
-3. For building the extension package:
-   ```bash
-   crx pack -o
-   ```
+3. For building the extension package:`bash
+crx pack -o`
 
 ## File Structure
 
