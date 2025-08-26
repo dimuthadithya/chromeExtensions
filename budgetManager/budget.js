@@ -1,4 +1,5 @@
 const spendAmount = document.getElementById('spendAmount');
+const limit = document.getElementById('limit');
 
 spendAmount.addEventListener('click', () => {
   chrome.storage.sync.get('total', function (budget) {
@@ -18,15 +19,19 @@ spendAmount.addEventListener('click', () => {
     });
 
     document.getElementById('total').innerText = newTotal;
-    amount.value = '';
+    amount = '';
   });
 });
 
 function loading() {
-  chrome.storage.sync.get('total', function (budget) {
+  chrome.storage.sync.get(['total', 'limit'], function (budget) {
     if (budget.total) {
       const total = document.getElementById('total');
       total.innerText = budget.total;
+    }
+
+    if (budget.limit) {
+      limit.textContent = budget.limit;
     }
   });
 }
