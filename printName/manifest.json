@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Hello User",
+    "version": "1.0",
+    "description": "A simple extension that greets the user by name.",
+    "action": {
+        "default_popup": "name.html"
+    }
+}
